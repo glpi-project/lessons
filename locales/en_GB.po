@@ -10,14 +10,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: sources/assistance/create-ticket.md:block 1 (paragraph)
-msgid "file://assistance/create-ticket.md"
-msgstr "file://assistance/create-ticket.md"
-
-#: sources/assistance/empty-ticket-page.md:block 1 (paragraph)
-msgid "file://assistance/empty-ticket-page.md"
-msgstr "file://assistance/empty-ticket-page.md"
-
 #: sources/introduction.md:block 1 (paragraph)
 msgid ""
 "Hello  and welcome to GLPI! This is the beginning of your adventure into the "
@@ -59,3 +51,41 @@ msgid ""
 msgstr ""
 "Already familiar with GLPI? No problem! You can navigate directly to the "
 "chapter you're interested in by clicking below:"
+
+#: sources/assistance/create-ticket.md:block 1 (paragraph)
+msgid "You can now create a ticket by clicking on this button."
+msgstr "You can now create a ticket by clicking on this button."
+
+#: sources/assistance/empty-ticket-page.md:block 1 (paragraph)
+msgid ""
+"This is the page with all your tickets. You can see the tickets you have "
+"created, those to which you are assigned, ..."
+msgstr ""
+"This is the page with all your tickets. You can see the tickets you have "
+"created, those to which you are assigned, ..."
+
+#: sources/assistance/ticket-dashboard.md:block 1 (paragraph)
+msgid ""
+"This section groups together several indicators in the form of a dashboard. "
+"Indicators can be edited by clicking on the \"Modify\" button at the top "
+"right of the page. It is also possible to switch the dashboard to night mode "
+"and refresh the indicators."
+msgstr ""
+"This section groups together several indicators in the form of a dashboard. "
+"Indicators can be edited by clicking on the \"Modify\" button at the top "
+"right of the page. It is also possible to switch the dashboard to night mode "
+"and refresh the indicators."
+
+#: sources/assistance/ticket-list.md:block 1 (paragraph)
+msgid "This section contains all the tickets to which you have access."
+msgstr "This section contains all the tickets to which you have access."
+
+#: sources/assistance/ticket-search.md:block 1 (paragraph)
+msgid "This section allows you to filter and search the ticket list."
+msgstr "This section allows you to filter and search the ticket list."
+
+#~ msgid "file://assistance/create-ticket.md"
+#~ msgstr "file://assistance/create-ticket.md"
+
+#~ msgid "file://assistance/empty-ticket-page.md"
+#~ msgstr "file://assistance/empty-ticket-page.md"

@@ -1,1 +1,1 @@
-file://assistance/create-ticket.md
+You can now create a ticket by clicking on this button.

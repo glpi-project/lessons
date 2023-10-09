@@ -84,7 +84,22 @@ $discoverConfig = [
                     "content" => "file://assistance/empty-ticket-page.md"
                 ],
                 [
-                    "element" => "#top-menu #add",
+                    "element" => "#page .dashboard-card .card-body",
+                    "title" => __("Ticket Dashboard"),
+                    "content" => "file://assistance/ticket-dashboard.md",
+                ],
+                [
+                    "element" => ".ajax-container.search-display-data",
+                    "title" => __("Ticket List"),
+                    "content" => "file://assistance/ticket-list.md",
+                ],
+                [
+                    "element" => ".search-form-container",
+                    "title" => __("Ticket Search"),
+                    "content" => "file://assistance/ticket-search.md",
+                ],
+                [
+                    "element" => "header.navbar .container-fluid ul li:nth-child(1)",
                     "title" => __("Create a ticket"),
                     "content" => "file://assistance/create-ticket.md"
                 ]
