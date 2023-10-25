@@ -36,15 +36,42 @@
 $discoverConfig = [
     "version" => "0.0.1",
     "startingLesson" => "intro",
+    "endingLesson" => "ending",
     "lessons" => [
         [
             "id" => "intro",
             "title" => __("Introduction"),
             "points" => 10,
+            "showEndingLesson" => true,
             "steps" => [
                 [
                     "title" => __("Introduction"),
                     "content" => "file://introduction.md",
+                    "tooltipClass" => "large-tooltip",
+                ],
+                [
+                    "element" => "header .btn-group .dropdown",
+                    "title" => __("User Menu"),
+                    "content" => __("This is a key feature in the interface, located at the top right corner. It serves as a gateway to the user menu, providing access to various user-related functionalities."),
+                ],
+                [
+                    "element" => "header a.lessons-menu-entry.dropdown-item",
+                    "title" => __("Lessons Entry"),
+                    "content" => __("This menu is a hub for numerous functionalities related to the user. It includes options for account settings, profile information, and more. One of the most important entries in this menu is **My Lessons**. This is where users can access all their lessons, track their progress, and continue learning. It's important to focus on finding the **My Lessons** entry as it is the gateway to the user's learning journey."),
+                    "actions" => [
+                        "dropdown-show" => [
+                            "dropdown" => "header .btn-group .dropdown",
+                        ]
+                    ],
+                ]
+            ]
+        ],
+        [
+            "id" => "ending",
+            "steps" => [
+                [
+                    "title" => __("🎉 Congratulations!"),
+                    "content" => "file://end-of-lesson.md",
                     "tooltipClass" => "large-tooltip",
                 ]
             ]
@@ -57,6 +84,18 @@ $discoverConfig = [
             "points" => 10,
             "navigateTo" => "front/central.php",
             "steps" => [
+                [
+                    "element" => "aside.navbar",
+                    "tooltipPosition" => "right",
+                    "title" => __("Menu"),
+                    "content" => __("This is the global menu of GLPI. It allows you to navigate through the different sections of the application."),
+                ],
+                [
+                    "element" => ".navbar-brand",
+                    "tooltipPosition" => "right",
+                    "title" => __("Menu"),
+                    "content" => __("Vous pouvez accéder à la page d'accueil en cliquant sur le logo GLPI en haut à gauche."),
+                ],
                 [
                     "element" => "#navbar-menu .nav-item.dropdown:first-child",
                     "tooltipPosition" => "right",
