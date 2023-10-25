@@ -44,7 +44,7 @@ POTFILE="locales/lessons.pot"
 
 # Create locales directory
 if [ ! -d "locales" ]; then
-    mkdir $WORKING_DIR/locales
+    mkdir locales
 fi
 
 # Create pot file
@@ -70,4 +70,4 @@ xgettext config.php \
 md2po --quiet --save --po-filepath $POTFILE $(find sources -type f -name "*.md")
 
 # Update main language
-LANG=C msginit --no-translator -i locales/markdown.pot -l en_GB -o locales/en_GB.po
+LANG=C msginit --no-translator -i $POTFILE -l en_GB -o locales/en_GB.po
