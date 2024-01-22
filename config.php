@@ -33,7 +33,7 @@
  * ---------------------------------------------------------------------
  */
 
-$discoverConfig = [
+return [
     "version" => "0.0.1",
     "startingLesson" => "intro",
     "endingLesson" => "ending",
